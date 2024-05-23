@@ -1,0 +1,144 @@
+.categoriesContainer {
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #e0f7ff;
+  margin-top: -300px;
+  position: relative;
+}
+
+.categoriesWrapper {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.categoriesWrapper h2 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 32.87px;
+  margin-bottom: 40px;
+  margin-top: 60px;
+}
+
+.categoriesList {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  cursor: pointer;
+  justify-content: start;
+}
+
+.categoryCard {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 240px;
+  height: 160px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.categoryCard:last-child {
+  background-color: transparent;
+  border: 2px solid #00000040;
+}
+
+.categoryCard:hover {
+  transform: translateY(-5px);
+}
+
+.categoryCard .icon {
+  width: 24.26px;
+  height: 22.5px;
+  color: #6563FF;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.categoryCard p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.78px;
+  text-align: start;
+  margin-left: 20px;
+  word-spacing: 100px;
+}
+
+@media (max-width: 1200px) {
+  .categoriesContainer {
+    padding: 20px;
+  }
+
+  .categoriesList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .categoriesContainer {
+    padding: 20px;
+  }
+
+  .categoriesWrapper h2 {
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  .categoriesList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .categoryCard {
+    max-width: 200px;
+    height: 140px;
+  }
+
+  .categoryCard .icon {
+    width: 20px;
+    height: 18px;
+    
+  }
+
+  .categoryCard p {
+    font-size: 14px;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 580px) {
+  .categoriesContainer {
+    padding: 10px;
+  }
+
+  .categoriesWrapper h2 {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .categoriesList {
+    grid-template-columns: 1fr;
+  }
+
+  .categoryCard {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .categoryCard .icon {
+    width: 18px;
+    height: 16px;
+  }
+
+  .categoryCard p {
+    font-size: 12px;
+    text-align: center;
+    word-spacing: 2px;
+    margin-left: 6px;
+  }
+}
